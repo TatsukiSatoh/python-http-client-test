@@ -1,7 +1,7 @@
-import test_requests
+import requests
 
 def test_requests():
-    response = test_requests.get('https://jsonplaceholder.typicode.com/posts/1')
+    response = requests.get('https://jsonplaceholder.typicode.com/posts/1')
     print(f"requests: {response.json()}")
 
 

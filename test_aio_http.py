@@ -7,5 +7,8 @@ async def test_aiohttp():
             json_response = await response.json()
             print(f"aiohttp: {json_response}")
 
+def main():
+    asyncio.run(test_aiohttp())
+
 if __name__ == "__main__":
-    test_aiohttp()
+    main()
